@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ5</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 550" width="550" height="550">
+    <defs>
+        <radialGradient id="radialFill1" cx="50%" cy="50%" r="50%" fx="85%" fy="60%">
+            <stop offset="0%" stop-color="#7b7b7b"></stop>
+            <stop offset="90%" stop-color="black"></stop>
+        </radialGradient>
+        <radialGradient id="radialFill2" cx="70%" cy="70%" r="320%" fx="170%" fy="150%" spreadMethod="pad">
+            <stop offset="40%" stop-color="#000"></stop>
+            <stop offset="40%" stop-color="#404040"></stop>
+        </radialGradient>
+        <linearGradient id="linearFill" x1="0%" y1="5%" x2="50%" y2="50%" spreadMethod="reflect">
+            <stop offset="0%" stop-color="#d6d6d6"></stop>
+            <stop offset="75%" stop-color="#535353"></stop>
+        </linearGradient>
+        <pattern id="pattern" width="40" height="20" patternUnits="userSpaceOnUse" patternTransform='rotate(45)'>
+            <circle cx="10" cy="10" r="7" fill="url(#radialFill1)"></circle>
+            <circle cx="30" cy="10" r="7" fill="url(#radialFill1)"></circle>
+        </pattern>
+        <path d="M170,250 c120,1 50,40 170,60" fill="transparent" id="textPath"></path>
+    </defs>
+    <rect x="50" y="50" width="450" height="450" rx="10" ry="10" fill="url(#linearFill)" stroke="black"
+          stroke-width="1"></rect>
+    <text x="100" y="86" text-anchor="start" stroke="#000" stroke-width="1" style="font-size: 27px" font-weight="bold"
+          font-family="sans-serif" fill="url(#linearFill)" id="homework">homework
+    </text>
+    <rect x="100" y="100" width="350" height="350" rx="10" ry="10" fill="url(#linearFill)"></rect>
+    <rect x="100" y="100" width="350" height="350" rx="10" ry="10" fill="url(#pattern)" stroke="black"
+          stroke-width="1"></rect>
+    <path d="M150,180 a 15 15 0 0 1 15 -15 h220 a 15 15 0 0 1 15 15 v160 a 15 15 0 0 1 -15 15 h-85 v15 h80 v15 h-210
+          v-15 h80 v-15 h-85 a 15 15 0 0 1 -15 -15 v-160 m15,0 h220 v160 h-220 v-160" fill-rule="evenodd"
+          fill="url(#linearFill)" stroke="black" stroke-width="1" stroke-linecap="square">
+    </path>
+    <rect x="165" y="180" width="220" height="160" fill="url(#radialFill2)"></rect>
+    <text x="33" y="210" text-anchor="start" fill="white" style="font-size: 25px" font-family="sans-serif"
+          letter-spacing="2">
+        <textPath xlink:href="#textPath">IT-Academy</textPath>
+    </text>
+</svg>
+</body>
+</html>
